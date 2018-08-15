@@ -8,7 +8,8 @@ const taskSchema = new Schema({
 	creator: String,
 	assignee: String,
 	dateDue: Date,
-	subTask: ObjectId //This should probably be an array of task objects
+	checklistItem: [String],
+	subTask: [String] // The strings should be the object IDs for other tasks
 }, {
 	timestamps: { createdAt: "created_at", updatedAt: "updated_at" }
 });
