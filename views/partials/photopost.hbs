@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem;">
+	<img class="card-img-top" src={{this.imgPath}} alt="Card image cap">
+	<div class="card-body">
+		<h5 class="card-title">{{this.imgName}}</h5>
+		<p class="card-text">{{this.caption}}</p>
+	</div>
+	<form action="/delete/{{this._id}}" method="POST" enctype="multipart/form-data">
+		<div class="button-spacing">
+			<button type="submit" class="btn btn-danger">Delete</button>
+		</div>
+	</form>
+</div>
