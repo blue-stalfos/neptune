@@ -1,0 +1,15 @@
+<div class="card" style="width: 18rem;">
+	<a href="/uploadavatar"><img class="card-img-top" src="{{user.avatar}}" alt="Card image cap"></a>
+	<div class="card-body">
+		<h5 class="card-title">{{user.username}}</h5>
+		<h6 class="card-title">{{user.fullname}}</h6>
+		<p class="card-text">{{user.bio}}</p>
+	</div>
+	<ul class="list-group list-group-flush">
+		<li class="list-group-item"><em>{{numberOfPhotos}} Photo(s)</em></li>
+	</ul>
+	<div class="card-body">
+		<a href="/uploadphoto/{{user._id}}"><button type="button" class="btn btn-primary">Post</button></a>
+		<a href="/updateprofile/{{user._id}}"><button type="button" class="btn btn-secondary">Edit</button></a>
+	</div>
+</div>

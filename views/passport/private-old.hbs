@@ -1,0 +1,18 @@
+{{#if user}}
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-auto">
+				{{> userprofile }}
+			</div>
+			<div class="col">
+				<div class="row flex flex-wrap">
+					{{#each photos}}
+						<div class="spacing">
+							{{> photopost}}</br>
+						</div>
+					{{/each}}
+				</div>
+			</div>
+		</div>
+	</div>
+{{/if}}
